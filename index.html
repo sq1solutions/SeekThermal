@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Seek Thermal</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <script src="js/vendor/TweenMax.min.js"></script>
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/libs/bootstrap/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/libs/jquery.scrollmagic.js"></script>
+    <script src="js/plugins.js"></script>
+
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+						<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+						<![endif]-->
+
+    <div class="block">
+        <div id="top">
+            <header class="layer1">
+                <div class="top-container">
+                    <div class="info">
+                        <h1>See The Unseen</h1>
+                        <p>What your are about to experience is not a product but a superpower.
+                            <br />As you are scrolling down the page, take a moment to imagine
+                            <br />a world where darkness no longer blinds you.</p>
+                    </div>
+                    <div class="scroll-init">
+                        <h2>Begin</h2>
+                        <img src="img/scroll-01.png" alt="">
+                    </div>
+
+                </div>
+
+                <!-- Begin Nav -->
+                <div class="container" id="nav">
+                    <nav class="navbar " role="navigation">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">
+                                    <img class="logo" src="assets/img/logo.png" alt="">
+                                </a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#">Experience Thermal</a>
+                                    </li>
+                                    <li><a href="#">What is Thermal</a>
+                                    </li>
+                                    <li><a href="#">See The Unseen</a>
+                                    </li>
+                                    <li><a href="See The Unseen">Developers</a>
+                                    </li>
+                                    <li><a href="#">Obtain The Power</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                </div>
+                <!-- End Nav -->
+            </header>
+
+        </div>
+
+    </div>
+
+    <div class="block">
+        <div id="therm"></div>
+    </div>
+
+    <div class="block">
+        <div id="therm-slide"></div>
+    </div>
+
+    <div class="block">
+        <div id="therm-concert"></div>
+    </div>
+
+    <div class="block">
+        <div id="therm-product"></div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+    var controller;
+    $(document).ready(function($) {
+        // init controller
+        controller = new ScrollMagic();
+
+        var scene = new ScrollScene({duration: 1000})
+        	.addTo(controller);
+
+        	new ScrollScene ({
+        		triggerElement: "div.block",
+						duration: $(window).height() + 900,
+						offset: -350
+					})
+					.addTo(controller)
+					.triggerHook("onCenter")
+					.setTween(new TimelineMax().add([
+						TweenMax.fromTo(".block .layer1", 1, {scale: 1, top: "90%"}, {top: "20%", ease: Linear.easeNone}),
+						TweenMax.to(".block .layer1", 1, {backgroundPosition: "0 -560%", ease: Linear.easeNone})
+					]));
+    });
+    </script>
+
+
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!--<script>
+							(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+								function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+							e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+							e.src='//www.google-analytics.com/analytics.js';
+							r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+							ga('create','UA-XXXXX-X');ga('send','pageview');
+						</script> -->
+</body>
+
+</html>

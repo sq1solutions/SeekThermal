@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Seek Thermal</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+<style type="text/css">
+#github-ribbon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+#msg {
+    line-height: 13px;
+    position: fixed;
+    width: 260px;
+    height: 28px;
+    padding-top: 12px;
+    left: 50%;
+    margin-left: -130px;
+    bottom: 0px;
+    text-align: center;
+    z-index: 500;
+    background-color: #2e639e;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+#msg div {
+    display: inline-block;
+}
+#msg .word {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+#msg a {
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+#msg a:hover {
+    text-decoration: none;
+}
+#msg a:hover .word {
+    text-decoration: underline;
+}
+#msg img {
+    vertical-align: bottom;
+}
+#msg div.scroll {
+    width: 12px;
+    height: 13px;
+    vertical-align: bottom;
+    background-image: url("../img/demo_arrow_scroll.png");
+}
+iframe.twitter-follow-button {
+    vertical-align: text-bottom;
+    margin: auto auto -1px 8px;
+}
+div#content-wrapper {
+    height: 100%;
+    min-width: 900px;
+    min-height: 500px;
+}
+html.touch div#content-wrapper {
+    min-width: 700px;
+}
+.scrollContainer {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-width: 650px;
+    width: 100%
+}
+.scrollContent {
+    position: relative;
+    /*height: 100%;*/
+}
+section {
+    height: 100%;
+}
+
+section#start {
+
+}
+h1 {
+    font-size: 80px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-weight: bold;
+}
+
+.spark {
+    position: absolute;
+}
+.spark.s0 {
+    background-image: url("../img/demo_spark1.png");
+    width: 4px;
+    height: 3px;
+}
+.spark.s1 {
+    background-image: url("../img/demo_spark2.png");
+    width: 6px;
+    height: 6px;
+}
+.spark.s2 {
+    background-image: url("../img/demo_spark3.png");
+    width: 8px;
+    height: 8px;
+}
+.spark.s3 {
+    background-image: url("../img/demo_spark4.png");
+    width: 11px;
+    height: 11px;
+}
+.spark.s4 {
+    background-image: url("../img/demo_spark5.png");
+    width: 13px;
+    height: 13px;
+}
+.spark.s5 {
+    background-image: url("../img/demo_spark6.png");
+    width: 17px;
+    height: 17px;
+}
+.wand {
+    position: absolute;
+}
+.sparkpoint {
+    position: absolute;
+}
+
+/*START*/
+
+
+#intro {
+    display: block;
+    width: 650px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin: -200px auto auto -325px;
+    position: absolute;
+}
+#intro h1 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 135px;
+    margin: 0;
+}
+#intro h1 span {
+    position: relative;
+}
+#intro .tophat {
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    margin-left: -144px;
+}
+#intro .floor {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -305px;
+}
+#intro .sparkpoint {
+    top: 60px;
+    left: 380px;
+}
+
+#tweens {
+    height: auto;
+    overflow: hidden;
+}
+
+#tweens h3 {
+    text-align: center;
+    font-size: 80px;
+    margin: 0 auto 200px auto;
+    position: relative;
+}
+#pin {
+    width: 100%;
+    overflow: hidden;
+}
+#pin h3 {
+    font-size: 80px;
+    text-align: center;
+    margin: -40px 0 0 0;
+    position: relative;
+    top: 50%;
+    line-height: 80px;
+}
+#pin #wipe {
+    height: 100%;
+    width: 0%;
+    top: 0;
+    position: absolute;
+    background-color: #2e639e;
+    overflow: hidden;
+}
+#pin #wipe h3 {
+    color: #FFFFFF;
+}
+#pin #slide {
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    position: absolute;
+    background-color: #c7e1ff;
+}
+#pin #slide h3 {
+    position: absolute;
+    width: 100%;
+}
+#pin h3#unpin {
+    margin-top: 10px;
+    position: absolute;
+    width: 100%
+}
+
+#parallax {
+    margin-bottom: 250px;
+    position: relative;
+    overflow: hidden;
+}
+#parallax h3 {
+    font-size: 80px;
+    text-align: center;
+    margin: -40px 0 0 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    line-height: 80px;
+}
+#parallax #parallaxbg {
+    position: absolute;
+    height: 300px;
+    top: 50%;
+    width: 100%;
+    margin-top: -150px;
+    background-image: url("../img/demo_parallax_bg.png");
+}
+#parallaxbg .top {
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-image: url("../img/demo_parallax_shadow_top.png");
+}
+#parallaxbg .bottom {
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: url("../img/demo_parallax_shadow_bottom.png");
+}
+
+#info {
+    height: auto;
+    padding-bottom: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#info h1 {
+    margin-bottom: 10px;
+}
+#info h2 {
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+}
+#info h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#info h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+#info #content {
+    width: 645px;
+    text-align: left;
+    display: inline-block;
+}
+#info #sublinecover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #c7e1ff;
+    left: 0;
+    top: 0;
+}
+#info #hatcontainer {
+    width: 140px;
+    height: 200px;
+    position: relative;
+    float: left;
+}
+
+#info #hatcontainer .hat {
+    position: absolute;
+    bottom: 10px;
+}
+#info #hatcontainer #bunny {
+    position: absolute;
+    bottom: 67px;
+    left: 23px;
+}
+#info #hatcontainer #bunny .eye {
+    position: absolute;
+    top: 6px;
+    left: 30px;
+    display: none;
+}
+#info #hatcontainer #speechbubble {
+    position: absolute;
+    width: 165px;
+    height: 103px;
+    background-image: url("../img/demo_bubble.png");
+    left: -118px;
+    top: -24px;
+}
+#info ul.nexttohat {
+    padding-left: 158px;
+}
+#speechbubble p {
+    margin: 0;
+    text-align: center;
+    line-height: 22px;
+    color: #2e639e;
+}
+#speechbubble p:first-child {
+    font-size: 24px;
+    margin-top: 23px;
+}
+#speechbubble p:last-child {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a:hover #speechbubble p:last-child {
+    text-decoration: underline;
+}
+html.touch body {
+    font-size: 25px;
+}
+html.touch #info #hatcontainer {
+    margin-bottom: 260px;
+    height: 300px;
+    width: 240px;
+}
+html.touch #info #hatcontainer .hat {
+    left: 90px;
+}
+html.touch #info #hatcontainer #bunny {
+    left: 110px;
+}
+html.touch #info #hatcontainer #speechbubble {
+    left: -20px;
+    top: 35px;
+}
+html.touch #info ul.nexttohat {
+    padding-left: 240px;
+}
+</style>
+
+
+</head>
+
+<body>
+   <div class="scrollContent">
+    <section id="titlechart">
+        <div id="description">
+            <h1>Parallax Scrolling</h1>
+            <h2>No big deal, if you have ScrollMagic.</h2>
+            <p>
+                Adding a parallax effect to your website is just a matter of assigning different movement speeds for the layers.
+            </p>
+            <a href="#" class="viewsource">view source</a>
+        </div>
+        <script>
+            var controller;
+            $(document).ready(function($) {
+                // init controller
+                controller = new ScrollMagic({vertical: false});
+            });
+        </script>
+    </section>
+    <div class="spacer s0"></div>
+    <section class="demo fullwidth">
+        <div id="parallaxContainer">
+            <div class="layer1">
+                <div class="box1 white">
+                    <p>A box in the sky.</p>
+                    <a href="#" class="viewsource">view source</a>
+                </div>
+            </div>
+            <div class="layer2"></div>
+            <div class="layer3"></div>
+        </div>
+        <script>
+            $(document).ready(function($) {
+                // build tween
+                var tween = new TimelineMax ()
+                    .add([
+                        TweenMax.to("#parallaxContainer .layer1", 1, {backgroundPosition: "-40% 0", ease: Linear.easeNone}),
+                        TweenMax.to("#parallaxContainer .layer2", 1, {backgroundPosition: "-500% 0", ease: Linear.easeNone}),
+                        TweenMax.to("#parallaxContainer .layer3", 1, {backgroundPosition: "-225% 0", ease: Linear.easeNone})
+                    ]);
+
+                // build scene
+                var scene = new ScrollScene({triggerElement: "#parallaxContainer", duration: 2000, offset: 450})
+                                .setTween(tween)
+                                .setPin("#parallaxContainer")
+                                .addTo(controller);
+
+                // show indicators (requires debug extension)
+                scene.addIndicators();
+            });
+        </script>
+    </section>
+    <div class="spacer s4"></div>
+    <div class="spacer s0"></div>
+    <section class="demo fullwidth" id="trigger2">
+        <div id="parallaxText">
+            <h1 class="layer1">PARALLAX</h1>
+            <h1 class="layer2">PARALLAX</h1>
+            <h1 class="layer3">
+                PARALLAX
+                <a href="#" class="viewsource">view source</a>
+            </h1>
+            
+        </div>
+        <script>
+            $(document).ready(function($) {
+                // build tween
+                var tween = new TimelineMax ()
+                    .add([
+                        TweenMax.fromTo("#parallaxText .layer1", 1, {scale: 3, autoAlpha: 0.05, left: 300}, {left: -350, ease: Linear.easeNone}),
+                        TweenMax.fromTo("#parallaxText .layer2", 1, {scale: 2, autoAlpha: 0.3, left: 150}, {left: -175, ease: Linear.easeNone})
+                    ]);
+
+                // build scene
+                var scene = new ScrollScene({triggerElement: "#trigger2", duration: $(window).width()})
+                                .setTween(tween)
+                                .addTo(controller);
+
+                // show indicators (requires debug extension)
+                scene.addIndicators();
+            });
+        </script>
+    </section>
+    <div class="spacer s_viewport"></div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+.block  {
+  height: 1100px;
+
+  & > div {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#top  {
+    position: absolute;
+  height: 1100px;
+  top: 50%;
+  width: 100%;
+  margin-top: -150px;
+ background: url(../assets/img/header.png) no-repeat center center; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+#therm {
+  background: url(../assets/img/section.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#therm-slide {
+  background: url(../assets/img/section-2.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#therm-concert {
+  background: url(../assets/img/section-3.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#therm-concert {
+}
+
+.logo {
+  max-width: 200px;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.top-container {
+  padding: 5% 0 18% 0;
+  color: #fff;
+  text-align: center;
+
+  .info {
+    width: 100%;
+    padding: 0 2rem;
+
+    h1 {
+      font-size: 8rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 3rem;
+    }
+    p {
+      font-size: 2rem;
+      text-transform: uppercase;
+
+    }
+  }
+
+  .scroll-init {
+
+    h2 {
+      color: #fff;
+      margin: 10rem auto 5rem auto;
+      width: 150px;
+      font-size: 3rem;
+      font-weight: 200;
+      border: 3px solid #fff;
+      padding: 2rem 0;   
+    }
+  }
+
+
+
+}
