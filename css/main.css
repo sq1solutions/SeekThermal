@@ -4996,7 +4996,7 @@ button.close {
 #top {
   position: absolute;
   height: 1100px;
-  top: 50%;
+  top: 20%;
   width: 100%;
   margin-top: -150px;
   background: url(../assets/img/header.png) no-repeat center center;
