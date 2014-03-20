@@ -5122,3 +5122,20 @@ nav {
 
 i {
   margin-right: 1rem; }
+
+.pipe {
+  position: absolute;
+  top: 49%;
+  right: 51.5%;
+  width: 13.8%;
+  height: 2px;
+  border: 1px solid #fff; }
+
+.circle {
+  position: absolute;
+  top: 46.7%;
+  right: 47.5%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50%; }

@@ -50,8 +50,8 @@
                 // #therm Scene
                 new ScrollScene ({
                   triggerElement: ".trigger2",
-                  duration: $(window).height() + 1500,
-                  offset: -750
+                  duration: $(window).height() + 900,
+                  offset: -350
               })
                 .addTo(controller)
                 .triggerHook("onCenter")
