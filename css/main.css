@@ -5414,3 +5414,6 @@ nav.navbar-default {
 
 li {
   list-style: none; }
+
+html {
+  font-size: 100%; }
