@@ -1,0 +1,107 @@
+nav.thermal-nav
+{
+	background: #202020;
+}
+
+.navbar-brand
+{
+	padding: 15px 20px;
+	height: auto;
+}
+
+.navbar-brand img
+{
+	height: 60px;
+	width: 130px;
+	display: block;
+}
+
+.thermal-nav .navbar-nav li a
+{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	text-transform: uppercase;
+}
+
+.thermal-nav .navbar-nav > li > a
+{
+	font-size: 14px;
+	line-height: 20px;
+	vertical-align: middle;
+	color: #FFF;
+	padding: 35px 20px;
+}
+
+.thermal-nav .navbar-nav > li > a:hover
+{
+	color: #FFF;
+	background: #000;
+}
+
+.thermal-nav .navbar-nav > li.shop > a
+{
+	background: #50a846;
+}
+
+.thermal-nav .navbar-nav li.cluster > div
+{
+	font-size: 0;
+}
+
+
+.thermal-nav .navbar-nav li.cluster > div a
+{
+	font-size: 14px;
+	color: #999;
+	line-height: 14px;
+	padding: 15px;
+	display: inline-block;
+	background: #333;
+	text-align: center;
+}
+
+.thermal-nav .navbar-nav li.cluster > div:first-child a
+{
+	border-bottom: 1px solid #202020;
+	padding-bottom: 16px;
+}
+
+.thermal-nav .navbar-nav li.cluster > div a:hover
+{
+	text-decoration: none;
+	background: #000;
+}
+
+.thermal-nav .navbar-nav li.cluster > div a:first-child
+{
+	margin-right: 1px;
+	width: 72px;
+}
+
+.thermal-nav .navbar-nav li.cluster > div a:first-child + a
+{
+	width: 149px;
+}
+
+.thermal-nav .navbar-nav li.cluster > div a .fa-map-marker
+{
+	margin-right: 5px;
+}
+
+.thermal-nav .navbar-nav li.cluster > div a.flag
+{
+	padding-left: 46px;
+	background-size: 16px;
+	background-repeat: no-repeat;
+	background-position: 20px 14px;
+	text-align: left;
+}
+
+.thermal-nav .navbar-nav li.cluster > div a.flag.us
+{
+	background-image: url(../img/us-16.png);
+}
+
+
+

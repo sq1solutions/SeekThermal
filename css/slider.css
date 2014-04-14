@@ -1,0 +1,73 @@
+.thermal-slider
+{
+	margin-left: -15px;
+}
+
+.thermal-slider img
+{
+	max-width: none;
+}
+
+.beforeafter_slider #toolbox
+{
+	display: none;
+}
+
+.beforeafter_slider {
+	padding: 0px;
+}
+
+.beforeafter_slider #mask
+{
+	border-radius: 0px;
+}
+
+#textbox_1
+{
+	top: auto;
+	left: auto;
+	bottom: 20px !important;
+	right: 20px !important;
+	height: 134px;
+	width: 274px;
+	background: url(../images/slider/description.png) top left no-repeat;
+}
+
+.thermal-slider img#before, .thermal-slider img#after
+{
+	width: 970px;
+	height: 514px;
+}
+
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+	.beforeafter_slider, #mask, .beforeafter_slider li
+	{
+		width: 1170px !important;
+		height: 640px !important;
+	}
+
+	.thermal-slider img#before, .thermal-slider img#after
+	{
+		width: 1170px;
+		height: 640px;
+	}
+
+	#textbox_1
+	{
+		bottom: 60px !important;
+		right: 60px !important;
+	}
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { ... }

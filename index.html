@@ -15,8 +15,11 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <script src="js/vendor/modernizr-2.7.1.min.js"></script>
 
@@ -27,7 +30,7 @@
 
     <main>
 
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top thermal-nav" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -38,21 +41,29 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-          <img src="img/logo.png" style="max-width: 70px; padding-bottom: 2rem;">
+          <img src="assets/img/logo.png">
       </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Experience Thermal</a></li>
-        <li><a href="#">What is Thermal</a></li>
+        <li><a href="#">Experience Thermal</a></li>
+        <li><a href="#">What is Thermal?</a></li>
         <li><a href="#">See The Unseen</a></li>
         <li><a href="#">Developers</a></li>
-        <li><a href="#">Obtain the Power</a></li>
-     
-      </ul>
-     
+        <li class="shop"><a href="#">Obtain</a></li>
+        <li class="cluster">
+            <div>
+                <a href="#"><i class="fa fa-shopping-cart"></i> 100</a>
+                <a href="#"><i class="fa fa-map-marker"></i> Find a store</a>
+                <div class="clearfix"></div>
+            </div>
+            <div>
+                <a href="#" class="flag us"><i class="fa fa-caret-down"></i> </a>
+                <a href="#">Sign in</a>
+                <div class="clearfix"></div>
+            </div>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->

@@ -1,0 +1,120 @@
+body
+{
+	padding-top: 60px;
+}
+
+.thermal-slider
+{
+	margin-top: 20px;
+}
+
+.slider-nav
+{
+	display: block;
+	text-align: center;
+	background: #2d2c2b;
+}
+
+.slider-nav>ul>li
+{
+	display: inline-block;
+}
+
+.slider-nav>ul>li.clear
+{
+	height: 0px;
+	width: 0px;
+	display: block;
+	clear: both;
+	float: none;
+}
+
+.slider-nav>ul>li>a
+{
+	border: 2px solid #FFF;
+	display: block;
+	margin: 40px 20px;
+	overflow: visible;
+	position: relative;
+	cursor: pointer;
+}
+
+.slider-nav>ul>li>a:hover
+{
+	background: rgba(0,0,0,.2);
+}
+
+.slider-nav>ul>li.active>a
+{
+	background: #ed1c24;
+	border: 1px solid transparent;
+	text-align: center;
+}
+
+.slider-nav>ul>li>a .caret
+{
+	display: none;
+	color: #ed1c24;
+	border-color: #ed1c24;
+	border-top: none;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid;
+}
+
+.slider-nav>ul>li.active>a .caret
+{
+	display: inline-block;
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	margin-left: -8px;
+}
+
+.slider-icon
+{
+	background-size: contain;
+	height: 64px;
+	width: 64px;
+	margin: 10px;
+	display: inline-block;
+}
+
+.slider-icon.icon-eye
+{
+	background: url(../images/icons/eye.png) top left no-repeat;
+}
+
+.slider-icon.icon-shield
+{
+	background: url(../images/icons/shield.png) top left no-repeat;
+}
+
+.slider-icon.icon-house
+{
+	background: url(../images/icons/house.png) top left no-repeat;
+}
+
+.slider-icon.icon-trees
+{
+	background: url(../images/icons/trees.png) top left no-repeat;
+}
+
+.slider-icon.icon-map
+{
+	background: url(../images/icons/map.png) top left no-repeat;
+}
+
+.slider-icon.icon-infinity
+{
+	background: url(../images/icons/infinity.png) top left no-repeat;
+}
+
+@media (min-width: 1200px) {
+
+	.slider-nav>ul>li>a
+	{
+		margin: 40px;
+	}
+
+}
