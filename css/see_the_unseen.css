@@ -33,7 +33,7 @@ body
 {
 	border: 2px solid #FFF;
 	display: block;
-	margin: 40px 20px;
+	margin: 40px 10px;
 	overflow: visible;
 	position: relative;
 	cursor: pointer;
@@ -78,43 +78,122 @@ body
 	width: 64px;
 	margin: 10px;
 	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: top left;
 }
 
 .slider-icon.icon-eye
 {
-	background: url(../images/icons/eye.png) top left no-repeat;
+	background-image: url(../images/icons/eye.png);
 }
 
 .slider-icon.icon-shield
 {
-	background: url(../images/icons/shield.png) top left no-repeat;
+	background-image: url(../images/icons/shield.png);
 }
 
 .slider-icon.icon-house
 {
-	background: url(../images/icons/house.png) top left no-repeat;
+	background-image: url(../images/icons/house.png);
 }
 
 .slider-icon.icon-trees
 {
-	background: url(../images/icons/trees.png) top left no-repeat;
+	background-image: url(../images/icons/trees.png);
 }
 
 .slider-icon.icon-map
 {
-	background: url(../images/icons/map.png) top left no-repeat;
+	background-image: url(../images/icons/map.png);
 }
 
 .slider-icon.icon-infinity
 {
-	background: url(../images/icons/infinity.png) top left no-repeat;
+	background-image: url(../images/icons/infinity.png);
 }
 
+/* Large desktop */
 @media (min-width: 1200px) {
 
 	.slider-nav>ul>li>a
 	{
 		margin: 40px;
+	}
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 995px) {
+
+	.container-fluid, .utility-nav, .container
+	{
+		min-width: 960px;
+	}
+
+	.slider-nav
+	{
+		min-width: 940px;
+	}
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+	.slider-nav>ul>li>a
+	{
+		margin: 30px 10px;
+	}
+
+	.slider-nav
+	{
+		width: 460px;
+		margin: 0 auto;
+	}
+
+	.slider-icon
+	{
+		background-size: 24px 24px;
+		height: 24px;
+		width: 24px;
+		margin: 10px;
+		display: inline-block;
+	}
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	.slider-nav>ul>li>a
+	{
+		margin: 20px 5px;
+		border-width: 1px;
+	}
+
+	.slider-nav
+	{
+		width: 280px;
+		margin: 0 auto;
+	}
+
+	.slider-icon
+	{
+		background-size: 16px 16px;
+		height: 16px;
+		width: 16px;
+		margin: 5px;
+		display: inline-block;
+	}
+
+	.slider-nav>ul>li.active>a .caret
+	{
+		border-right-width: 5px;
+		border-left-width: 5px;
+		border-bottom-width: 5px;
+		top: -5px;
+		left: 50%;
+		margin-left: -5px;
 	}
 
 }

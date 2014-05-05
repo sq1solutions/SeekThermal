@@ -35,7 +35,22 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top thermal-nav" role="navigation">
+    <div class="utility-nav">
+    <ul>
+        <li>
+            <a href="#" class="flag us"><i class="fa fa-caret-down"></i> </a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-map-marker"></i> Find a store</a>
+        </li>
+        <li>
+            <a href="#">Sign in</a>
+        </li>
+    </ul>
+    <div class="clearfix"></div>
+</div>    
+
+<nav class="navbar navbar-default navbar-fixed-top thermal-nav" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -58,18 +73,7 @@
         <li><a href="#">See The Unseen</a></li>
         <li><a href="#">Developers</a></li>
         <li class="shop"><a href="#">Obtain</a></li>
-        <li class="cluster">
-            <div>
-                <a href="#"><i class="fa fa-shopping-cart"></i> 100</a>
-                <a href="#"><i class="fa fa-map-marker"></i> Find a store</a>
-                <div class="clearfix"></div>
-            </div>
-            <div>
-                <a href="#" class="flag us"><i class="fa fa-caret-down"></i> </a>
-                <a href="#">Sign in</a>
-                <div class="clearfix"></div>
-            </div>
-        </li>
+        <li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i> 100</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -80,7 +84,7 @@
         <ul>      
           <!-- THE 1. SLIDE -->
           <li><img src="images/slider/stove.jpg" alt="images/slider/stove-thermal.jpg">
-            <div id="textbox_1"></div>
+          <div class="slide-text">This is an example of home safety in the kitchen.</div>
           </li>     
         </ul>
       </div>
@@ -127,7 +131,7 @@
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
     </script>

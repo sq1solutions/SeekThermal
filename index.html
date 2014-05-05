@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/homepage.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <script src="js/vendor/modernizr-2.7.1.min.js"></script>
 
@@ -29,6 +30,22 @@
 <body class="loading">
 
     <main>
+
+
+<div class="utility-nav">
+    <ul>
+        <li>
+            <a href="#" class="flag us"><i class="fa fa-caret-down"></i> </a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-map-marker"></i> Find a store</a>
+        </li>
+        <li>
+            <a href="#">Sign in</a>
+        </li>
+    </ul>
+    <div class="clearfix"></div>
+</div>    
 
 <nav class="navbar navbar-default navbar-fixed-top thermal-nav" role="navigation">
   <div class="container-fluid">
@@ -53,18 +70,7 @@
         <li><a href="#">See The Unseen</a></li>
         <li><a href="#">Developers</a></li>
         <li class="shop"><a href="#">Obtain</a></li>
-        <li class="cluster">
-            <div>
-                <a href="#"><i class="fa fa-shopping-cart"></i> 100</a>
-                <a href="#"><i class="fa fa-map-marker"></i> Find a store</a>
-                <div class="clearfix"></div>
-            </div>
-            <div>
-                <a href="#" class="flag us"><i class="fa fa-caret-down"></i> </a>
-                <a href="#">Sign in</a>
-                <div class="clearfix"></div>
-            </div>
-        </li>
+        <li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i> 100</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -195,11 +201,11 @@
 
     </main>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
     </script>
-    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/imagesloaded.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/skrollr.js"></script>
