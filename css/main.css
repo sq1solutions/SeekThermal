@@ -5097,20 +5097,24 @@ main {
 
 /* Slide 1 */
 #slide-1 .bcg {
-  background-image: url("../img/header.png"); }
+  background-image: url("../img/homepage-slides/slide-1.png"); }
 
 /* Slide 2 */
 #slide-2 .bcg {
-  background-image: url("../img/section.png");
+  background-image: url("../img/homepage-slides/slide-2a.jpg");
+  text-align: center; }
+
+  #slide-2 .bcg2 {
+  background-image: url("../img/homepage-slides/slide-2b.png");
   text-align: center; }
 
 /* Slide 3 */
 #slide-3 .bcg {
-  background-image: url("../img/section-2.png"); }
+  background-image: url("../img/homepage-slides/slide-3a.jpg");
+  background-position: 0px; }
 
 #slide-3 .bcg2 {
-  background-image: none;
-  background-color: #000000;
+  background-image: url("../img/homepage-slides/slide-3b.jpg");
   position: absolute;
   top: 0;
   left: 0; }
@@ -5124,7 +5128,7 @@ main {
 .curtainContainer .curtain {
   width: 250%;
   height: 1px;
-  background-image: url("../assets/img/dog-park-thermal.jpg", no-repeat);
+  background-image: url("../img/homepage-slides/slide-3b.jpg", no-repeat);
   position: absolute;
   top: 25%;
   left: 0;
@@ -5138,17 +5142,17 @@ main {
   text-align: center; }
 
 #slide-4 .bcg {
-  background-image: url("../assets/img/dog-park-real.jpg"); }
+  background-image: url("../img/homepage-slides/slide-4.jpg"); }
 
 /* Slide 5 */
 #slide-5 {
   position: relative; }
 
 #slide-5 .bcg {
-  background-image: url("../assets/img/dog-park-thermal.jpg"); }
+  background: #000; }
 
 #slide-5 .bcg2 {
-  background-image: url("../assets/img/dog-park-thermal.png");
+  background: #FFF;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -5437,3 +5441,44 @@ li {
 
 html {
   font-size: 100%; }
+
+
+/* Buy Section */
+
+.buy-section
+{
+  background: #FFF;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.buy-section h2
+{
+  border: 3px solid #000;
+  padding: 30px 50px;
+  line-height: 100%;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  margin: 60px 0px 40px 0px;
+}
+
+.buy-section p
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #555;
+  width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.buy-section .placeholder-buy
+{
+}
+
+
+
+
+
+
