@@ -5142,7 +5142,8 @@ main {
   text-align: center; }
 
 #slide-4 .bcg {
-  background-image: url("../img/homepage-slides/slide-4.jpg"); }
+  background-image: url("../img/homepage-slides/slide-4.jpg");
+  background: none; }
 
 /* Slide 5 */
 #slide-5 {

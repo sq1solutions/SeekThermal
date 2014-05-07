@@ -29,11 +29,6 @@
 	border: 2px solid #FFF;
 }
 
-#slide-1 div.hsContent.skrollable.skrollable-between
-{
-	opacity: 1 !important;
-}
-
 .content-block
 {
 	width: 400px;
@@ -210,6 +205,16 @@
 .slider-icon.icon-infinity
 {
 	background-image: url(../images/icons/infinity.png);
+}
+
+video {
+	position:fixed;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+height: 100%;
+width: auto;
 }
 
 
