@@ -5473,8 +5473,14 @@ html {
   margin: 0 auto 40px auto;
 }
 
-.buy-section .placeholder-buy
+footer.interior
 {
+  text-align: center;
+}
+
+footer.interior .social-box li
+{
+  font-size: 28px;
 }
 
 
