@@ -1,0 +1,54 @@
+video
+{
+	top: 110px;
+	z-index: 1;
+}
+
+.video-overlay
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(../img/pattern.png) top left repeat;
+	z-index: 2;
+}
+
+.content-block
+{
+	position: fixed;
+	z-index: 9999;
+	top: 200px;
+}
+
+.content-block h2
+{
+	color: #FFF;
+}
+
+.content-block .module-wrap p
+{
+	padding: 0px 0px 20px 0px;
+}
+
+.content-block label
+{
+	color: #999;
+	display: block;
+	margin-bottom: 3px;
+}
+
+.content-block input
+{
+	display: block;
+	width: 100%;
+	text-indent: 10px;
+	padding: 10px 0px;
+	margin-bottom: 20px;
+}
+
+.content-block button
+{
+	border: none;
+}
