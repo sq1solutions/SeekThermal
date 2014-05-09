@@ -26,7 +26,13 @@
 	font-size: 24px;
 	text-decoration: none;
 	color: #FFF;
+	background-color: transparent;
 	border: 2px solid #FFF;
+	transition: all 0.3 ease-in-out;
+}
+#slide-1 a::hover {
+	background-color: #fff;
+	color: transparent;
 }
 
 .content-block
@@ -96,6 +102,15 @@
 	text-decoration: none;
 	color: #000;
 	background: #FFF;
+
+}
+
+.content-block .module-wrap .module-button:hover,
+.content-block .module-wrap .module-button:active  {
+	border: 1px solid #fff;
+	background-color: transparent;
+	color: #fff;
+	cursor: pointer;
 }
 
 .buy-section

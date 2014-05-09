@@ -1,8 +1,6 @@
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
-
-
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
@@ -262,7 +260,7 @@ th {
 
 html {
   font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2133,7 +2131,6 @@ input[type="button"].btn-block {
   font-family: 'Glyphicons Halflings';
   src: url("bootstrap/glyphicons-halflings-regular.eot");
   src: url("bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
-
 .glyphicon {
   position: relative;
   top: 1px;
@@ -3914,14 +3911,12 @@ a.thumbnail.active {
 
   to {
     background-position: 0 0; } }
-
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
 
   to {
     background-position: 0 0; } }
-
 .progress {
   overflow: hidden;
   height: 20px;
@@ -4821,7 +4816,7 @@ button.close {
     border-radius: 10px;
     cursor: pointer;
     background-color: #000 \9;
-    background-color: rgba(0, 0, 0, 0); }
+    background-color: transparent; }
   .carousel-indicators .active {
     margin: 0;
     width: 12px;
@@ -4902,7 +4897,6 @@ button.close {
 
 @-ms-viewport {
   width: device-width; }
-
 .visible-xs, .visible-sm, .visible-md, .visible-lg {
   display: none !important; }
 
@@ -4999,7 +4993,7 @@ textarea {
 body {
   font-size: 1em;
   line-height: 1.4;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -5087,7 +5081,8 @@ section {
 main {
   overflow-x: hidden; }
 
-.bcg {
+.bcg,
+.bcg-2 {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -5097,38 +5092,29 @@ main {
 
 /* Slide 1 */
 #slide-1 .bcg {
-  background-image: url("../img/homepage-slides/slide-1.png"); }
-
-/* Slide 2 */
-#slide-2 .bcg {
-  background-image: url("../img/homepage-slides/slide-2a.jpg");
-  text-align: center; }
-
-  #slide-2 .bcg2 {
-  background-image: url("../img/homepage-slides/slide-2b.png");
-  text-align: center; }
+  background-image: url("../img/header.png"); }
 
 /* Slide 3 */
 #slide-3 .bcg {
-  background-image: url("../img/homepage-slides/slide-3a.jpg");
-  background-position: 0px; }
+  background-image: url("../img/section-2.png"); }
 
 #slide-3 .bcg2 {
-  background-image: url("../img/homepage-slides/slide-3b.jpg");
+  background-image: none;
+  background-color: #000000;
   position: absolute;
   top: 0;
   left: 0; }
 
-/* Slide 4 */
+/* Slide 3 */
 .curtainContainer {
   width: 100%;
   height: 100%;
   position: relative; }
 
 .curtainContainer .curtain {
-  width: 250%;
+  width: 300%;
   height: 1px;
-  background-image: url("../img/homepage-slides/slide-3b.jpg", no-repeat);
+  background-color: transparent;
   position: absolute;
   top: 25%;
   left: 0;
@@ -5141,9 +5127,57 @@ main {
   width: 100%;
   text-align: center; }
 
-#slide-4 .bcg {
-  background-image: url("../img/homepage-slides/slide-4.jpg");
-  background: none; }
+#slide-2 .bcg {
+  background-image: url("../img/homepage-slides/slide-2a.jpg"); }
+
+/* Slide 5 */
+#slide-5 {
+  position: relative; }
+
+#slide-5 .bcg {
+  background-image: url("../assets/img/dog-park-thermal.jpg"); }
+
+#slide-5 .bcg2 {
+  background-image: url("../assets/img/dog-park-thermal.png");
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1; }
+
+#slide-5 .bcg3 {
+  background: none;
+  background-color: #010101;
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2; }
+
+/* Slide 1 */
+#slide-1 .bcg {
+  background-image: url("../img/homepage-slides/slide-1.png"); }
+
+/* Slide 2 */
+#slide-2 .bcg {
+  background-image: url("../img/homepage-slides/slide-2a.jpg");
+  text-align: center; }
+
+#slide-2 .bcg2 {
+  background-image: url("../img/homepage-slides/slide-2b.png");
+  text-align: center; }
+
+/* Slide 3 */
+#slide-3 .bcg {
+  background-image: url("../img/homepage-slides/slide-3b.jpg");
+  background-position: 0px; }
+
+#slide-3 .bcg2 {
+  background-image: url("../img/homepage-slides/slide-3a.jpg");
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 /* Slide 5 */
 #slide-5 {
@@ -5245,6 +5279,9 @@ main {
 
 #slideNav a.disabled {
   cursor: default; }
+
+.top-slide {
+  margin-top: 110px; }
 
 /* ==========================================================================
    Helper classes
@@ -5389,7 +5426,6 @@ main {
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
@@ -5399,108 +5435,3 @@ main {
   h2,
   h3 {
     page-break-after: avoid; } }
-ul.social-box {
-  margin: 5rem 0 0 0;
-  padding: 0; }
-  ul.social-box li {
-    display: inline-block;
-    list-style: none;
-    margin-left: 3rem;
-    padding: 1rem;
-    border: 2px solid #fff;
-    vertical-align: middle; cursor: pointer; }
-
-    ul.social-box li a
-    {
-      cursor: pointer;
-    }
-
-    .legal-links
-    {
-      text-align: center;
-      margin-top: 100px;
-    }
-    .legal-links a
-    {
-      margin-left: 20px;
-      font-size: 11px;
-      text-transform: uppercase;
-      color: #999;
-      text-align: center;
-      text-decoration: none;
-    }
-
-nav.navbar-default {
-  background-color: transparent;
-  border: 0; }
-
-.navbar {
-  margin-bottom: 0; }
-
-li {
-  list-style: none; }
-
-html {
-  font-size: 100%; }
-
-
-/* Buy Section */
-
-.buy-section
-{
-  background: #FFF;
-  text-align: center;
-  padding-bottom: 100px;
-}
-
-.buy-section h2
-{
-  border: 3px solid #000;
-  padding: 30px 50px;
-  line-height: 100%;
-  text-transform: uppercase;
-  display: inline-block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
-  margin: 60px 0px 40px 0px;
-}
-
-.buy-section p
-{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  color: #555;
-  width: 600px;
-  margin: 0 auto 40px auto;
-}
-
-footer.interior
-{
-  text-align: center;
-}
-
-footer.interior .social-box li
-{
-  font-size: 28px;
-  padding: 10px;
-  border: 0px;
-  background: #FFF;
-  color: #000;
-}
-
-footer.interior .social-box li a i
-{
-  color: #000;
-}
-
-footer.interior .legal-links
-{
-  margin-top: 50px;
-  padding-bottom: 50px;
-}
-
-
-
-
-
-
