@@ -1,0 +1,46 @@
+
+
+// To compile the Scss, from the terminal, navigate to the project file and Run -  * sass --watch css/main.scss:css/main.css  *
+
+/*==========================*/
+/*  Dependencies/Bower Components */
+/*==========================*/
+
+/* to update these dependencies, run  * bower install *  from the terminal */
+
+// Bootstrap
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+
+// Normalize
+// @import "../bower_components/normalize.scss/_normalize";
+
+/*==========================*/
+			  /*  Core Styles */
+/*==========================*/
+
+// Variables, colors, Mixins
+@import "core/_vars";
+
+// Utilities and helpers
+@import "core/_helpers";
+
+/*==========================*/
+			 /* Shared Styles*/
+/*==========================*/
+
+// Shared
+// @import "shared/_beforeafter-content";
+// @import "shared/_beforeafter-settings";
+// @import "shared/_see-the-unseen";
+// @import "shared/_slider";
+@import "shared/_base"; // add all the base parallax styles to the document and move the rest to global
+@import "shared/_global";
+@import "shared/_slides";
+
+
+// Views
+@import "views/_homepage";
+@import "views/_developers";
+
+
+
