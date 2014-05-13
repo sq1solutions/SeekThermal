@@ -1,30 +1,19 @@
 {
   "name": "Seek-Thermal",
   "version": "0.1.0",
-  "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-sass": "~0.7.3"
-  },
-  "description": "HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.",
+  "description": "Seek Thermal - Promo Site",
   "main": "Gruntfile.js",
-  "directories": {
-    "doc": "doc"
-  },
-  "dependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-sass": "~0.7.3"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/sq1solutions/SeekThermal.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sq1solutions/SeekThermal/issues"
-  },
-  "homepage": "https://github.com/sq1solutions/SeekThermal"
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-sass": "~0.7.3"
+  }
 }
